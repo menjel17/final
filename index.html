@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce Image Gallery</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- jQuery (CDN) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="product grid" aria-label="Image gallery demo">
+      <!-- Left: Gallery -->
+      <div>
+        <div class="viewer" id="viewer" aria-live="polite">
+          <img id="mainImage" src="img/img1.jpg" alt="Headphones – front angle" />
+          <button class="nav prev" id="prevBtn" aria-label="Previous image"></button>
+          <button class="nav next" id="nextBtn" aria-label="Next image"></button>
+        </div>
+
+        <div class="thumbs" id="thumbStrip" role="listbox" aria-label="Thumbnails">
+          <button class="thumb active" data-large="img/img1.jpg" data-alt="Headphones – front angle">
+            <img src="img/img1.jpg" alt="Front angle thumbnail" />
+          </button>
+          <button class="thumb" data-large="img/img2.jpg" data-alt="Headphones – side angle">
+            <img src="img/img2.jpg" alt="Side angle thumbnail" />
+          </button>
+          <button class="thumb" data-large="img/img3.jpg" data-alt="Headphones – folded">
+            <img src="img/img3.jpg" alt="Folded thumbnail" />
+          </button>
+          <button class="thumb" data-large="img/img4.jpg" data-alt="Headphones – top view">
+            <img src="img/img4.jpg" alt="Top view thumbnail" />
+          </button>
+          <button class="thumb" data-large="img/img5.jpg" data-alt="Headphones – lifestyle">
+            <img src="img/img5.jpg" alt="Lifestyle thumbnail" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Product Info -->
+      <aside class="info">
+      <h1>PulseX Wireless Headphones</h1>
+        <div class="muted">Model PX-9 • Active Noise Canceling</div>
+        <div class="price">₱6,990</div>
+        <p class="muted">Sleek, comfy, and tuned for balanced sound. Up to 40 hours of battery life with quick charge support.</p>
+.</p>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <button class="btn" type="button">Add to Cart</button>
+          <button class="btn" type="button">Buy Now</button>
+        </div>
+      </aside>
+    </section>
+  </main>
+  </div>
+</body>
+</html>
